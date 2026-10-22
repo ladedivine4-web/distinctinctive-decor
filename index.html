@@ -1,0 +1,1737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Distinctive Decor Global Services Ltd | Aesthetifying Structures</title>
+
+  <meta name="description"
+        content="Distinctive Decor Global Services Ltd provides professional POP installation, surface diagnosis and treatment, skimming services, painting, decorative finishes, inspection and consultation services in Osogbo, Osun State.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --gold: #d4af37;
+      --gold-light: #f0d477;
+      --dark: #0d0d0d;
+      --dark2: #151515;
+      --dark3: #1d1d1d;
+      --text: #dddddd;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--dark);
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(13, 13, 13, 0.96);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+      backdrop-filter: blur(10px);
+    }
+
+    .navbar {
+      max-width: 1150px;
+      margin: auto;
+      padding: 18px 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 23px;
+      font-weight: bold;
+      color: var(--gold);
+      letter-spacing: 1px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+
+    .menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+
+      background:
+        linear-gradient(rgba(0,0,0,.78), rgba(0,0,0,.85)),
+        url("https://coohom-biz-sg-s3.coohom.com/ins/static/case/modern-pop-ceiling-living-room-nigeria-1774336730350921700.jpg")
+        center/cover no-repeat;
+    }
+
+    .hero-content {
+      max-width: 1150px;
+      margin: auto;
+      width: 100%;
+      padding: 80px 25px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 7vw, 75px);
+      max-width: 850px;
+      line-height: 1.05;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 span {
+      color: var(--gold);
+    }
+
+    .hero p {
+      max-width: 650px;
+      color: #ddd;
+      font-size: 18px;
+      margin-bottom: 35px;
+    }
+
+    /* =========================
+       BUTTONS
+    ========================= */
+
+    .btn {
+      display: inline-block;
+      padding: 14px 26px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 10px;
+      transition: .3s;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #111;
+    }
+
+    .btn-gold:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 1px solid var(--gold);
+      color: var(--gold);
+    }
+
+    .btn-outline:hover {
+      background: var(--gold);
+      color: #111;
+    }
+
+    /* =========================
+       GENERAL
+    ========================= */
+
+    section {
+      padding: 90px 25px;
+    }
+
+    .container {
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 55px;
+    }
+
+    .section-title span {
+      color: var(--gold);
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 2px;
+    }
+
+    .section-title h2 {
+      font-size: 38px;
+      margin-top: 8px;
+    }
+
+    .section-title p {
+      color: #aaa;
+      max-width: 700px;
+      margin: 12px auto 0;
+    }
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about {
+      background: #111;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .about-image {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 1px solid rgba(212,175,55,.25);
+    }
+
+    .about-text h2 {
+      font-size: 38px;
+      margin-bottom: 20px;
+    }
+
+    .about-text h2 span {
+      color: var(--gold);
+    }
+
+    .about-text p {
+      color: #bbb;
+      margin-bottom: 18px;
+    }
+
+    /* =========================
+       SERVICES
+    ========================= */
+
+    .services {
+      background: var(--dark);
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .service-card {
+      background: var(--dark2);
+      border: 1px solid rgba(212,175,55,.18);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: .3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-7px);
+      border-color: var(--gold);
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .service-content {
+      padding: 25px;
+    }
+
+    .service-content h3 {
+      color: var(--gold);
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .service-content p {
+      color: #aaa;
+      font-size: 15px;
+    }
+
+    /* SPECIAL INSPECTION CARD */
+
+    .inspection-card {
+      border: 1px solid var(--gold);
+      box-shadow: 0 0 25px rgba(212,175,55,.08);
+    }
+
+    .paid-notice {
+      margin-top: 18px;
+      padding: 12px 15px;
+      border-left: 3px solid var(--gold);
+      background: rgba(212,175,55,.08);
+      color: #ddd;
+      font-size: 14px;
+    }
+
+    .paid-notice strong {
+      color: var(--gold);
+    }
+
+    /* =========================
+       PROCESS
+    ========================= */
+
+    .process {
+      background: #111;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .process-card {
+      text-align: center;
+      padding: 30px 25px;
+      background: var(--dark2);
+      border: 1px solid rgba(212,175,55,.15);
+      border-radius: 8px;
+      transition: .3s;
+    }
+
+    .process-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--gold);
+    }
+
+    .number {
+      width: 50px;
+      height: 50px;
+      margin: 0 auto 15px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: #111;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .process-card h3 {
+      margin-bottom: 8px;
+      color: var(--gold);
+    }
+
+    .process-card p {
+      color: #999;
+      font-size: 14px;
+    }
+
+    .process-message {
+      margin-top: 45px;
+      text-align: center;
+      padding: 25px;
+      border: 1px solid rgba(212,175,55,.3);
+      background: var(--dark2);
+      border-radius: 8px;
+    }
+
+    .process-message p {
+      font-size: 20px;
+      color: #eee;
+      font-style: italic;
+    }
+
+    .process-message strong {
+      color: var(--gold);
+    }
+
+    /* =========================
+       WHY CHOOSE US
+    ========================= */
+
+    .why {
+      background: var(--dark);
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .why-card {
+      padding: 30px;
+      background: var(--dark2);
+      border-left: 3px solid var(--gold);
+    }
+
+    .why-card h3 {
+      margin-bottom: 10px;
+      color: var(--gold);
+    }
+
+    .why-card p {
+      color: #aaa;
+    }
+
+    /* =========================
+       GALLERY
+    ========================= */
+
+    .gallery {
+      background: #111;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      height: 250px;
+      border: 1px solid rgba(212,175,55,.2);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: .4s;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.08);
+    }
+
+    .gallery-label {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 15px;
+      background: linear-gradient(transparent, rgba(0,0,0,.9));
+      font-weight: bold;
+      color: white;
+    }
+
+    .gallery-note {
+      text-align: center;
+      color: #777;
+      font-size: 13px;
+      margin-top: 25px;
+    }
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .cta {
+      background:
+        linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.8)),
+        url("https://decorcity.com.ng/wp-content/uploads/2020/01/Residential-Interior-and-Exterior-finish-at-Mowe-Ibafo-by-Decor-City-Nigeria-005.jpg")
+        center/cover no-repeat;
+
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      max-width: 650px;
+      margin: 0 auto 30px;
+      color: #ddd;
+    }
+
+    /* =========================
+       CONTACT
+    ========================= */
+
+    .contact {
+      background: #111;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+    }
+
+    .contact-info h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .contact-info p {
+      color: #aaa;
+      margin-bottom: 12px;
+    }
+
+    .contact-info strong {
+      color: var(--gold);
+    }
+
+    form {
+      background: #171717;
+      padding: 30px;
+      border-radius: 10px;
+      border: 1px solid rgba(212,175,55,.18);
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 15px;
+      border: 1px solid #333;
+      background: #0d0d0d;
+      color: white;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      border-color: var(--gold);
+    }
+
+    textarea {
+      height: 130px;
+      resize: vertical;
+    }
+
+    form button {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      background: var(--gold);
+      color: #111;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    form button:hover {
+      background: var(--gold-light);
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      background: #080808;
+      text-align: center;
+      padding: 30px 20px;
+      border-top: 1px solid rgba(212,175,55,.2);
+    }
+
+    footer p {
+      color: #777;
+      font-size: 14px;
+    }
+
+    footer strong {
+      color: var(--gold);
+    }
+
+    /* =========================
+       WHATSAPP
+    ========================= */
+
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 999;
+      background: #25D366;
+      color: white;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 26px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.4);
+    }
+
+    .whatsapp:hover {
+      transform: scale(1.08);
+    }
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 850px) {
+
+      .menu-btn {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: #0d0d0d;
+        flex-direction: column;
+        padding: 25px;
+        border-bottom: 1px solid rgba(212,175,55,.2);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service-grid,
+      .why-grid,
+      .process-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 550px) {
+
+      section {
+        padding: 70px 18px;
+      }
+
+      .hero-content {
+        padding: 70px 18px;
+      }
+
+      .hero h1 {
+        font-size: 43px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .btn {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+      }
+
+      .service-grid,
+      .why-grid,
+      .process-grid,
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section-title h2 {
+        font-size: 31px;
+      }
+
+      .about-image {
+        height: 300px;
+      }
+
+      .cta h2 {
+        font-size: 32px;
+      }
+
+      .logo {
+        font-size: 18px;
+      }
+
+      .process-message p {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+
+  <header>
+    <nav class="navbar">
+
+      <div class="logo">
+        Distinctive Decor Global Services Ltd
+      </div>
+
+      <button class="menu-btn" onclick="toggleMenu()">
+        ☰
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#designs">Designs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+
+  <!-- =========================
+       HERO
+  ========================== -->
+
+  <section class="hero" id="home">
+
+    <div class="hero-content">
+
+      <h1>
+        Transform Your Space With
+        <span>Distinctive Decor Global Services Ltd</span>
+      </h1>
+
+      <p>
+        Professional POP installation, interior decoration,
+        ceiling designs, wall finishing and complete interior
+        finishing for beautiful and modern spaces.
+      </p>
+
+      <a href="#contact" class="btn btn-gold">
+        Request a Quote
+      </a>
+
+      <a href="#services" class="btn btn-outline">
+        Explore Services
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       ABOUT
+  ========================== -->
+
+  <section class="about" id="about">
+
+    <div class="container">
+
+      <div class="about-grid">
+
+        <img
+          class="about-image"
+          src="https://img.interiorcompany.com/interior/webproduct/642638701136419624829.png"
+          alt="Modern POP ceiling interior design"
+        >
+
+        <div class="about-text">
+
+          <h2>
+            About
+            <span>Distinctive Decor Global Services Ltd</span>
+          </h2>
+
+          <p>
+            Distinctive Decor Global Services Ltd is a professional
+            surface finishing and architectural aesthetics company
+            committed to transforming spaces through exceptional
+            craftsmanship, creativity and quality.
+          </p>
+
+          <p>
+            We combine technical expertise with innovative finishing
+            solutions to enhance the beauty, character and value of
+            residential, commercial and institutional structures.
+          </p>
+
+          <p>
+            Our purpose is simple: to make every structure distinctive.
+          </p>
+
+          <p>
+            From POP ceiling installation to interior finishing,
+            our services are designed to give your home, office or
+            commercial space a clean and distinctive appearance.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       SERVICES
+  ========================== -->
+
+  <section class="services" id="services">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <span>What We Do</span>
+
+        <h2>Our Services</h2>
+
+        <p>
+          Professional solutions designed to improve the beauty,
+          quality and functionality of your structure.
+        </p>
+
+      </div>
+
+
+      <div class="service-grid">
+
+
+        <!-- SERVICE 1 -->
+
+        <div class="service-card">
+
+          <img
+            src="https://coohom-biz-sg-s3.coohom.com/ins/static/case/modern-pop-ceiling-living-room-nigeria-1774336730350921700.jpg"
+            alt="Modern POP ceiling"
+          >
+
+          <div class="service-content">
+
+            <h3>POP Installation</h3>
+
+            <p>
+              Professional POP ceiling installation designed to
+              create clean, modern and attractive ceiling finishes.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- SERVICE 2 -->
+
+        <div class="service-card">
+
+          <img
+            src="https://www.daibau.ng/showfile.php?id=3667"
+            alt="Geometric POP ceiling design"
+          >
+
+          <div class="service-content">
+
+            <h3>Interior Decoration</h3>
+
+            <p>
+              We help transform interiors with attractive layouts,
+              decorative details, lighting ideas and finishing touches.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- SERVICE 3 -->
+
+        <div class="service-card">
+
+          <img
+            src="https://decorcity.com.ng/wp-content/uploads/2020/01/Residential-Interior-and-Exterior-finish-at-Mowe-Ibafo-by-Decor-City-Nigeria-005.jpg"
+            alt="Modern ceiling and interior finishing"
+          >
+
+          <div class="service-content">
+
+            <h3>Ceiling Designs</h3>
+
+            <p>
+              From simple designs to layered and decorative POP
+              ceilings, we create ceiling styles that complement
+              your space.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- SERVICE 4 -->
+
+        <div class="service-card">
+
+          <img
+            src="https://www.nairaland.com/attachments/18394047_6bc8fc6cb0e24db3b14f5ffea9991562_jpeg0ff806891174824f1b6178fb80d3dce8"
+            alt="Wall finishing"
+          >
+
+          <div class="service-content">
+
+            <h3>Wall Finishing</h3>
+
+            <p>
+              Give your walls a more refined appearance with
+              professional finishing and decorative treatment.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- SERVICE 5 -->
+
+        <div class="service-card">
+
+          <img
+            src="https://img.interiorcompany.com/interior/webproduct/642638701136419624829.png"
+            alt="Interior finishing"
+          >
+
+          <div class="service-content">
+
+            <h3>Interior Finishing</h3>
+
+            <p>
+              We bring different finishing elements together to
+              create a clean, coordinated and attractive interior.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- SERVICE 6 -->
+
+        <div class="service-card">
+
+          <img
+            src="https://www.daibau.ng/showfile.php?id=3667"
+            alt="Custom decorative ceiling"
+          >
+
+          <div class="service-content">
+
+            <h3>Custom Decoration</h3>
+
+            <p>
+              Have a specific design in mind? We can work with
+              your ideas and create a decorative solution suited
+              to your space.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- SERVICE 7 -->
+
+        <div class="service-card">
+
+          <div class="service-content">
+
+            <h3>Surface Diagnosis & Wall Treatment</h3>
+
+            <p>
+              Professional assessment and treatment of wall
+              surfaces to prepare them for quality finishing.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- SERVICE 8 -->
+
+        <div class="service-card">
+
+          <div class="service-content">
+
+            <h3>Painting Services</h3>
+
+            <p>
+              Interior and exterior painting services with
+              careful preparation and professional finishing.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- SERVICE 9 -->
+
+        <div class="service-card">
+
+          <div class="service-content">
+
+            <h3>Decorative Finishes & Floor Painting</h3>
+
+            <p>
+              Decorative finishing solutions and floor painting
+              designed to enhance the appearance and character
+              of your space.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- SERVICE 10 -->
+
+        <div class="service-card inspection-card">
+
+          <div class="service-content">
+
+            <h3>Project Inspection & Consultation</h3>
+
+            <p>
+              <strong>Inspection:</strong>
+              Assessment of the existing structure, surfaces,
+              defects, measurements and technical requirements.
+            </p>
+
+            <br>
+
+            <p>
+              <strong>Consultation:</strong>
+              Discussion of your vision, preferred finishes,
+              budget, materials and overall project objectives.
+            </p>
+
+            <div class="paid-notice">
+
+              <strong>Paid Professional Service:</strong><br>
+
+              Inspection and consultation are professional
+              services. Fees vary depending on project scope,
+              location and specific requirements.
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       WORK PROCESS
+  ========================== -->
+
+  <section class="process" id="process">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <span>Our Work Process</span>
+
+        <h2>How We Transform Your Space</h2>
+
+        <p>
+          A professional process from the first assessment
+          through to final handover.
+        </p>
+
+      </div>
+
+
+      <div class="process-grid">
+
+
+        <!-- STEP 1 -->
+
+        <div class="process-card">
+
+          <div class="number">1</div>
+
+          <h3>Inspection</h3>
+
+          <p>
+            Assess the structure, surfaces and technical
+            requirements.
+          </p>
+
+        </div>
+
+
+        <!-- STEP 2 -->
+
+        <div class="process-card">
+
+          <div class="number">2</div>
+
+          <h3>Consultation</h3>
+
+          <p>
+            Understand the client's vision and project
+            objectives.
+          </p>
+
+        </div>
+
+
+        <!-- STEP 3 -->
+
+        <div class="process-card">
+
+          <div class="number">3</div>
+
+          <h3>Assessment & Quotation</h3>
+
+          <p>
+            Develop the project scope and quotation based
+            on findings and discussions.
+          </p>
+
+        </div>
+
+
+        <!-- STEP 4 -->
+
+        <div class="process-card">
+
+          <div class="number">4</div>
+
+          <h3>Project Planning</h3>
+
+          <p>
+            Plan materials, manpower, timeline and execution.
+          </p>
+
+        </div>
+
+
+        <!-- STEP 5 -->
+
+        <div class="process-card">
+
+          <div class="number">5</div>
+
+          <h3>Transformation & Execution</h3>
+
+          <p>
+            Execute professionally from preparation
+            through to finishing.
+          </p>
+
+        </div>
+
+
+        <!-- STEP 6 -->
+
+        <div class="process-card">
+
+          <div class="number">6</div>
+
+          <h3>Quality Control & Handover</h3>
+
+          <p>
+            Inspect completed work, attend to final details
+            and hand over the finished project.
+          </p>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="process-message">
+
+        <p>
+          <strong>
+            “Inspection determines what your structure needs.
+            Consultation determines what you want it to become.”
+          </strong>
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       WHY CHOOSE US
+  ========================== -->
+
+  <section class="why">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <span>Why Choose Us</span>
+
+        <h2>Built Around Quality</h2>
+
+      </div>
+
+
+      <div class="why-grid">
+
+
+        <div class="why-card">
+
+          <h3>Professional Finishing</h3>
+
+          <p>
+            We focus on neat, attractive and well-finished work.
+          </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+          <h3>Modern Designs</h3>
+
+          <p>
+            We create designs that give your space a modern
+            and distinctive appearance.
+          </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+          <h3>Customer Focused</h3>
+
+          <p>
+            Your ideas and requirements are considered
+            throughout the project.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       DESIGNS
+  ========================== -->
+
+  <section class="gallery" id="designs">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <span>Design Inspiration</span>
+
+        <h2>What We Can Create</h2>
+
+        <p>
+          Explore examples of modern POP and interior design
+          styles that can inspire your own project.
+        </p>
+
+      </div>
+
+
+      <div class="gallery-grid">
+
+
+        <div class="gallery-item">
+
+          <img
+            src="https://coohom-biz-sg-s3.coohom.com/ins/static/case/modern-pop-ceiling-living-room-nigeria-1774336730350921700.jpg"
+            alt="Layered POP ceiling"
+          >
+
+          <div class="gallery-label">
+            Modern Layered POP
+          </div>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+          <img
+            src="https://www.daibau.ng/showfile.php?id=3667"
+            alt="Geometric POP design"
+          >
+
+          <div class="gallery-label">
+            Geometric POP Design
+          </div>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+          <img
+            src="https://img.interiorcompany.com/interior/webproduct/642638701136419624829.png"
+            alt="Contemporary ceiling"
+          >
+
+          <div class="gallery-label">
+            Contemporary Ceiling
+          </div>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+          <img
+            src="https://decorcity.com.ng/wp-content/uploads/2020/01/Residential-Interior-and-Exterior-finish-at-Mowe-Ibafo-by-Decor-City-Nigeria-005.jpg"
+            alt="Interior finishing"
+          >
+
+          <div class="gallery-label">
+            Interior Finishing
+          </div>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+          <img
+            src="https://www.nairaland.com/attachments/18394047_6bc8fc6cb0e24db3b14f5ffea9991562_jpeg0ff806891174824f1b6178fb80d3dce8"
+            alt="Decorative POP ceiling"
+          >
+
+          <div class="gallery-label">
+            Decorative POP Ceiling
+          </div>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+          <img
+            src="https://coohom-biz-sg-s3.coohom.com/ins/static/case/modern-pop-ceiling-living-room-nigeria-1774336730350921700.jpg"
+            alt="Modern Nigerian interior"
+          >
+
+          <div class="gallery-label">
+            Modern Interior
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+      <p class="gallery-note">
+        Images shown are design references and inspiration examples.
+        Replace them with Distinctive Decor Global Services Ltd's
+        own project photos when available.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       CTA
+  ========================== -->
+
+  <section class="cta">
+
+    <div class="container">
+
+      <h2>
+        Ready to Transform Your Space?
+      </h2>
+
+      <p>
+        Tell us what you have in mind and let's discuss the
+        right POP, decoration or finishing solution for your space.
+      </p>
+
+      <a
+        href="https://wa.me/2348055974002"
+        target="_blank"
+        class="btn btn-gold"
+      >
+        Chat on WhatsApp
+      </a>
+
+      <a
+        href="#contact"
+        class="btn btn-outline"
+      >
+        Request a Quote
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       CONTACT
+  ========================== -->
+
+  <section class="contact" id="contact">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <span>Get In Touch</span>
+
+        <h2>
+          Contact Distinctive Decor Global Services Ltd
+        </h2>
+
+      </div>
+
+
+      <div class="contact-grid">
+
+
+        <!-- CONTACT DETAILS -->
+
+        <div class="contact-info">
+
+          <h3>
+            Let's Talk About Your Project
+          </h3>
+
+          <p>
+            <strong>Business:</strong><br>
+            Distinctive Decor Global Services Ltd
+          </p>
+
+          <p>
+            <strong>Phone:</strong><br>
+
+            <a
+              href="tel:08055974002"
+              style="color:#ddd;text-decoration:none;"
+            >
+              08055974002
+            </a>
+          </p>
+
+          <p>
+            <strong>Email:</strong><br>
+
+            <a
+              href="mailto:distinctp25@gmail.com"
+              style="color:#ddd;text-decoration:none;"
+            >
+              distinctp25@gmail.com
+            </a>
+          </p>
+
+          <p>
+            <strong>Address:</strong><br>
+            Federal Housing Estate, Oke-Onitea,
+            Osogbo, Osun State
+          </p>
+
+          <p>
+            <strong>Opening Hours:</strong><br>
+            8:00am – 7:00pm
+          </p>
+
+          <p>
+            <strong>TikTok Page:</strong><br>
+            paintwithdistinct
+          </p>
+
+        </div>
+
+
+        <!-- QUOTE FORM -->
+
+        <form id="quoteForm">
+
+          <input
+            type="text"
+            id="name"
+            placeholder="Your Name"
+            required
+          >
+
+          <input
+            type="tel"
+            id="phone"
+            placeholder="Your Phone Number"
+            required
+          >
+
+          <select id="service" required>
+
+            <option value="">
+              Select a Service
+            </option>
+
+            <option>
+              POP Installation
+            </option>
+
+            <option>
+              Interior Decoration
+            </option>
+
+            <option>
+              Ceiling Designs
+            </option>
+
+            <option>
+              Wall Finishing
+            </option>
+
+            <option>
+              Interior Finishing
+            </option>
+
+            <option>
+              Custom Decoration
+            </option>
+
+            <option>
+              Surface Diagnosis & Wall Treatment
+            </option>
+
+            <option>
+              Painting Services
+            </option>
+
+            <option>
+              Decorative Finishes & Floor Painting
+            </option>
+
+            <option>
+              Project Inspection & Consultation
+            </option>
+
+          </select>
+
+
+          <textarea
+            id="message"
+            placeholder="Tell us about your project..."
+            required
+          ></textarea>
+
+
+          <button type="submit">
+            Request a Quote
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <p>
+
+      © <span id="year"></span>
+
+      <strong>
+        Distinctive Decor Global Services Ltd
+      </strong>.
+
+      All rights reserved.
+
+      <br>
+
+      <span style="color:#d4af37;">
+        Aesthetifying Structures.
+      </span>
+
+    </p>
+
+  </footer>
+
+
+  <!-- =========================
+       WHATSAPP BUTTON
+  ========================== -->
+
+  <a
+    href="https://wa.me/2348055974002"
+    target="_blank"
+    class="whatsapp"
+    aria-label="Chat with Distinctive Decor Global Services Ltd on WhatsApp"
+  >
+    ☎
+  </a>
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+
+  <script>
+
+    /* MOBILE MENU */
+
+    function toggleMenu() {
+
+      const nav =
+        document.getElementById("navLinks");
+
+      nav.classList.toggle("active");
+
+    }
+
+
+    /* CLOSE MOBILE MENU */
+
+    document
+      .querySelectorAll(".nav-links a")
+      .forEach(link => {
+
+        link.addEventListener("click", () => {
+
+          document
+            .getElementById("navLinks")
+            .classList.remove("active");
+
+        });
+
+      });
+
+
+    /* CURRENT YEAR */
+
+    document
+      .getElementById("year")
+      .textContent =
+      new Date().getFullYear();
+
+
+    /* QUOTE FORM */
+
+    document
+      .getElementById("quoteForm")
+      .addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        const name =
+          document.getElementById("name").value;
+
+        const phone =
+          document.getElementById("phone").value;
+
+        const service =
+          document.getElementById("service").value;
+
+        const message =
+          document.getElementById("message").value;
+
+
+        const whatsappMessage =
+`Hello Distinctive Decor Global Services Ltd,
+
+My name is ${name}.
+
+Phone: ${phone}
+
+Service needed: ${service}
+
+Project details:
+${message}`;
+
+
+        const url =
+          "https://wa.me/2348055974002?text=" +
+          encodeURIComponent(whatsappMessage);
+
+
+        window.open(url, "_blank");
+
+      });
+
+  </script>
+
+</body>
+</html>
